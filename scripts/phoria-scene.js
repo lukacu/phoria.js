@@ -400,7 +400,7 @@
                if (matParent)
                {
                   // if parent matrix is provided multiply it against local matrix else use the parent matrix
-                  matLocal = matLocal ? mat4.multiply(mat4.create(), matLocal, matParent) : matParent;
+                  matLocal = matLocal ? mat4.multiply(mat4.create(), matParent, matLocal) : matParent;
                }
                
                // hook point for onScene event handlers - custom user handlers or added by entities during
