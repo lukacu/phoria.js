@@ -713,10 +713,10 @@ if (typeof Phoria === "undefined" || !Phoria)
           offsety = desc.offsety || 0,
           offsetz = desc.offsetz || 0;
       return {
-         points: [{x:-1*scalex,y:1*scaley,z:-1*scalez}, {x:1*scalex,y:1*scaley,z:-1*scalez}, {x:1*scalex,y:-1*scaley,z:-1*scalez}, {x:-1*scalex,y:-1*scaley,z:-1*scalez},
-                  {x:-1*scalex,y:1*scaley,z:1*scalez}, {x:1*scalex,y:1*scaley,z:1*scalez}, {x:1*scalex,y:-1*scaley,z:1*scalez}, {x:-1*scalex,y:-1*scaley,z:1*scalez}],
-         edges: [{a:0,b:1}, {a:1,b:2}, {a:2,b:3}, {a:3,b:0}, {a:4,b:5}, {a:5,b:6}, {a:6,b:7}, {a:7,b:4}, {a:0,b:4}, {a:1,b:5}, {a:2,b:6}, {a:3,b:7}],
-         polygons: [{vertices:[0,1,2,3]},{vertices:[0,4,5,1]},{vertices:[1,5,6,2]},{vertices:[2,6,7,3]},{vertices:[4,0,3,7]},{vertices:[5,4,7,6]}]
+          points: [{x:-1*scalex+offsetx,y:1*scaley+offsety,z:-1*scalez+offsetz}, {x:1*scalex+offsetx,y:1*scaley+offsety,z:-1*scalez+offsetz}, {x:1*scalex+offsetx,y:-1*scaley+offsety,z:-1*scalez+offsetz}, {x:-1*scalex+offsetx,y:-1*scaley+offsety,z:-1*scalez+offsetz},
+          {x:-1*scalex+offsetx,y:1*scaley+offsety,z:1*scalez+offsetz}, {x:1*scalex+offsetx,y:1*scaley+offsety,z:1*scalez+offsetz}, {x:1*scalex+offsetx,y:-1*scaley+offsety,z:1*scalez+offsetz}, {x:-1*scalex+offsetx,y:-1*scaley+offsety,z:1*scalez+offsetz}],
+          edges: [{a:0,b:1}, {a:1,b:2}, {a:2,b:3}, {a:3,b:0}, {a:4,b:5}, {a:5,b:6}, {a:6,b:7}, {a:7,b:4}, {a:0,b:4}, {a:1,b:5}, {a:2,b:6}, {a:3,b:7}],
+          polygons: [{vertices:[0,1,2,3]},{vertices:[0,4,5,1]},{vertices:[1,5,6,2]},{vertices:[2,6,7,3]},{vertices:[4,0,3,7]},{vertices:[5,4,7,6]}]
       };
    }
 
